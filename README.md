@@ -71,7 +71,7 @@ You can use a custom Maven [settings.xml](https://maven.apache.org/settings.html
 ```
 
 
-### Running docker commands inside the image
+### Running docker commands inside the container
 
 This image has the docker command line client installed, which allows you to run other docker containers as part of your build toolchain using a
 [docker-out-of-docker (DooD)](http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing/) approach
