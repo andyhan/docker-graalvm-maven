@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# Copyright 2020-2021 by Vegard IT GmbH, Germany, https://vegardit.com
+# SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com)
+# SPDX-FileContributor: Sebastian Thomschke
 # SPDX-License-Identifier: Apache-2.0
-#
-# Author: Sebastian Thomschke, Vegard IT GmbH
+# SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/docker-graalvm-maven
 
 set -eu
 
@@ -55,7 +55,7 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
-export RUN_IN_DOCKER_IMAGE=${RUN_IN_DOCKER_IMAGE:-vegardit/graalvm-maven:release}
+export RUN_IN_DOCKER_IMAGE=${RUN_IN_DOCKER_IMAGE:-vegardit/graalvm-maven:latest-java11}
 
 project_root=$(readlink -e "$(dirname ${BASH_SOURCE[0]})/..")
 project_name=$(basename "$project_root")
